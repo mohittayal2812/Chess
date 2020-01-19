@@ -19,5 +19,16 @@ public class Bishop extends Piece{
 	        int y = Math.abs(start.getY() - end.getY()); 
 	        return x == y; 
 	    } 
+	    
+	    @Override
+	    public String toString() {
+	    	if(this.isWhite()) {
+				return "wB";
+			}
+			else {
+				return "bB";
+			}
+	    }
+
 
 }

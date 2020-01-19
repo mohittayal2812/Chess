@@ -33,4 +33,5 @@ public abstract class Piece {
     public abstract boolean canMove(Board board,  
                                  Spot start, Spot end);
 
+
 }

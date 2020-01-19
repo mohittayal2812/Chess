@@ -18,4 +18,15 @@ public class Knight extends Piece {
         int y = Math.abs(start.getY() - end.getY()); 
         return x * y == 2; 
     } 
+    
+    @Override
+    public String toString() {
+    	if(this.isWhite()) {
+			return "wKn";
+		}
+		else {
+			return "bKn";
+		}
+    }
+
 } 

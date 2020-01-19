@@ -34,13 +34,21 @@ public class Spot {
     } 
   
     public int getY() 
-    { 
+    {  
         return this.y; 
     } 
   
     public void setY(int y) 
     { 
         this.y = y; 
-    } 
+    }
+    
+    @Override
+    public String toString() {
+    	if(piece != null)
+    		return piece.toString();
+    	else
+    		return "-";
+    }
 
 }

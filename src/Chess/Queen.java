@@ -19,4 +19,15 @@ public class Queen extends Piece{
         int y = Math.abs(start.getY() - end.getY()); 
         return x * y == 2 || x == y; 
     } 
+    
+    @Override
+    public String toString() {
+    	if(this.isWhite()) {
+			return "wQ";
+		}
+		else {
+			return "bQ";
+		}
+    }
+
 }

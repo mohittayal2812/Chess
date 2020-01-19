@@ -20,5 +20,16 @@ public class Rook extends Piece {
 	        int y = Math.abs(start.getY() - end.getY()); 
 	        return x * y == 0; 
 	    } 
+	    
+	    @Override
+	    public String toString() {
+	    	if(this.isWhite()) {
+				return "wR";
+			}
+			else {
+				return "bR";
+			}
+	    }
+
 
 }

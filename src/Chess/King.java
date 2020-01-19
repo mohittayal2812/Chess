@@ -55,5 +55,15 @@ public class King extends Piece{
         // check if the starting and  
         // ending position are correct 
     } 
+    
+    @Override
+    public String toString() {
+    	if(this.isWhite()) {
+			return "wK";
+		}
+		else {
+			return "bK";
+		}
+    }
 
 }

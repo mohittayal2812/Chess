@@ -21,5 +21,16 @@ public class Pawn extends Piece {
 	        int y = Math.abs(start.getY() - end.getY()); 
 	        return x == 1 || y==1 || y==0; 
 	    } 
+	    
+	    @Override
+	    public String toString() {
+	    	if(this.isWhite()) {
+				return "wP";
+			}
+			else {
+				return "bP";
+			}
+	    }
+
 
 }
